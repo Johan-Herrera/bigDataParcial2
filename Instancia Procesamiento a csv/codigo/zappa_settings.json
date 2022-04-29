@@ -1,0 +1,27 @@
+{
+    "dev": {
+        "app_function": "app.handler",
+        "aws_region": "us-east-1",
+        "profile_name": null,
+        "project_name": "processingdata",
+        "runtime": "python3.8",
+        "role_name": "LabRole",
+        "apigateway_enabled": false,
+        "keep_warm": false,
+        "manage_roles": false,
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-8tq997aeg"
+        "events": [
+        {
+        "function": 
+         "app.handler",
+        "event_source": {
+            "arn":"arn:aws:s3:::parcial2-datos",
+            "events": [
+                "s3:ObjectCreated:*"
+                      ]
+                        }
+       }
+       ]
+    }
+}
