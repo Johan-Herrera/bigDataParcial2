@@ -1,0 +1,4 @@
+use default;
+select titulo from news;
+select year from news;
+select categoria from news;
